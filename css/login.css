@@ -1,0 +1,130 @@
+body{
+    overflow: auto;
+}
+
+form{
+display:block;
+font-family:verdana;
+}
+
+fieldset.login{
+margins:auto;
+width:425px;
+text-align:center;
+border-radius:10px 75px;
+}
+
+input.uname{
+width:250px;
+padding:7px;
+border:none;
+border-bottom:2px solid black;
+margin-bottom:10px;
+margin-left:10px;
+background-color: #3CBC8D;
+color: white;
+border-radius:4px;
+}
+
+input.pswrd{
+width:250px;
+padding:7px;
+border:none;
+border-bottom:2px solid black;
+margin-left:13px;
+background-color: #3CBC8D;
+color: white;
+border-radius:4px;
+}
+
+legend{
+text-align:center;
+line-height:100px;
+font-family:verdana;
+font-style:italic;
+font-size:40px;
+font-weight:bold;
+text-shadow:3px 3px 6px grey;
+}
+
+label.uname{
+text-decoration:none;
+line-height:50px;
+font-size:20px;
+}
+
+label.pswrd{
+text-decoration:none;
+line-height:50px;
+font-size:20px;
+}
+
+label.rememberme{
+line-height:40px;
+text-align:left;
+font-size:16px;
+}
+
+a{
+text-decoration:none;
+display:block;
+}
+
+a:hover{
+color:red;
+}
+
+a:active{
+color:blue;
+}
+
+img{
+height:200px;
+text-align:center;
+    width: 200px
+}
+
+input [type=button], input[type=submit], input[type=reset]{
+background-color:blue;
+border:none;
+color:white;
+padding:10px 25px;
+text-decoration:none;
+margin:4px 2px;
+cursor:pointer;
+font-family:arial;
+box-shadow:3px 3px 6px black;
+border-radius:4px;
+    width: 100px;
+}
+
+::placeholder{
+color:white;
+}
+
+input.link{
+margin:auto;
+}
+
+div.login{
+    width: 100.15%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+div.login::after{
+    content: "";
+    background:url(http://www.swehg.com/swengineering/wp-content/uploads/2018/03/Welcome-505471442-960x450.jpg);
+    opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+input.checkbox{
+    width: auto;
+}

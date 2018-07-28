@@ -1,0 +1,67 @@
+a.heading{
+    width: auto;
+    text-align: center;
+}
+
+div.whole{
+    width: 100.15%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+div.whole::after {
+  content: "";
+  background: url(http://www.swehg.com/swengineering/wp-content/uploads/2018/03/Welcome-505471442-960x450.jpg);
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+strong{
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    color: navy;
+    line-height: 3;
+    text-decoration: none;
+}
+
+h1{
+    font-family: verdana;
+    text-align: center;
+    text-shadow: 4px 4px 8px grey;
+    font-size: 75px;
+    border: solid;
+    border-width: 5px;
+    box-shadow: 4px 4px 8px grey;
+    padding: 20px;
+    background-color: sandybrown; 
+}
+
+p{
+    font-family: Comic Sans MS;
+    line-height: 2.5;
+    vertical-align: bottom; 
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+body{
+    font-family: verdana;
+}
+
+.c1{
+    text-align: center;
+}
+
+input.button{
+    box-sizing: content-box;
+    font-size: 20px;
+    cursor: pointer;
+    border-color: antiquewhite;
+}

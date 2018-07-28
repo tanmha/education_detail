@@ -1,0 +1,42 @@
+.container{
+    border: 5px darkviolet solid;
+    background-color: azure;
+    margin-right: 300px;
+    margin-left: 60px;
+}
+
+.image{
+    float:right;
+    margin-right: 10px;
+    margin-top: 17px;
+    border: 3px yellow solid;
+}
+
+h1{
+    color: red;
+    text-align: center;
+        border: 2px red solid;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: yellow;
+    
+}
+
+body{
+    font-family: verdana;
+    font-style:normal;
+    font-display: block;
+}
+
+.links{
+    text-align: center;   
+}
+
+p{
+    margin-left: 10px;
+}
+
+strong{
+    margin-left: 10px;
+    margin-top: 10px;
+}

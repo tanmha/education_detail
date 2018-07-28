@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+	function check(form) { 
+				var storage = window.localStorage;
+				uname=storage.getItem('uname');
+				pwd=storage.getItem('pass');
+				if(uname){
+                if(form.uname.value == uname && form.password.value == pwd) { 
+				window.open('home page.html');/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username");/*displays error message*/
+                }}
+				else{alert("Register first");}
+            }
+	</script>
+</head>
+<body>
+    <div class="b1">
+<ul class="menu">
+<li class="menu" style="float:right; border-left: 1.75px solid yellow;"><a href="vision.html" target="_parent" class="menu">About Us</a></li>
+</ul><br><br>
+        <marquee behavior="alternate"> <font color="red"> <strong>Welcome to the login portal. Please sign up.</strong> </font> </marquee>
+<div class="form"><form action="">
+<center><fieldset class="login"> 
+<img src="img/logo.jpg" class="terna"><br><br>
+<legend class="legend">Login</legend><br>
+<label for="uname" class="uname">Username <input type="text" id="uname" placeholder="e.g. xyz@gmail.com" class="uname"> </label> <br>
+<label for="password" class="pswrd">Password <input type="password" id="password" class="pswrd"> </label> <br>
+<br>
+<input type="submit" value="Login" id="login" class="login" onclick="check(this.form)"/> &nbsp;&nbsp;&nbsp;
+<input type="reset" value="Clear" id="clear" class="clear" /><br><br>
+<br>
+    <b style="color: maroon">New User?</b><a class="link" href="register_now.html">Register Now</a>
+</fieldset></center>
+    </form></div> 
+    </div>
+</body>
+</html>

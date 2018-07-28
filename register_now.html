@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Register Now</title>
+        <link rel="stylesheet" type="text/css" href="css/register_now.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+<script>
+	function sign_up(form) { 
+				var storage = window.localStorage;
+				storage.setItem("fname", form.firstname.value);
+				storage.setItem("lname", form.lastname.value);
+				storage.setItem("uname", form.username.value);
+				storage.setItem("pass", form.password.value);
+				alert("Registed Sucessfully");
+				window.open('index.html');
+            }
+</script>
+    </head>
+    <body>
+        <ul class="menu">
+                        <li class="menu"><a href="index.html" target="_parent" class="menu">Login</a></li>
+            <li style="float: right; border-left: 1.75px solid yellow;" class="menu"><a href="vision.html" class="menu">About Us</a></li>
+        </ul><br><br>
+        <center><form action="">
+            <fieldset class="f1">
+                <legend class="legend">Register Now</legend><br>
+                <label for="firstname" class="firstname">First Name&nbsp;<input type="text" id="firstname" class="firstname"> </label>
+                <br>
+                <label for="lastname" class="lastname" style="text-align: left">Last Name<input type="text" id="lastname" class="lastname"></label><br>
+                <label for="username" class="username">Username&nbsp;<input type="text" id="username" class="username"></label><br>
+                <label for="password" class="pswrd">Password&nbsp;&nbsp;<input type="password" id="password" class="pswrd"></label><br>
+                <br>
+                <input type="submit" value="Sign Up" class="signup" onclick="sign_up(this.form);">
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <input type="reset" value="Clear" class="clear">
+                </fieldset>
+            </form></center>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+body{
+    font-family: verdana;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+
+.list{
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 250px;
+    margin-right: 300px;
+    border: 3px red solid;
+    background-image: repeating-radial-gradient(aqua,skyblue);
+    
+}
+ 
+li a:hover{
+
+    color: red;
+}
+
+li a{
+    color: firebrick;
+}
+
+body h1{
+    border: 1px black solid;
+    color: darkblue;
+    background-image: repeating-linear-gradient(yellow,aqua);
+    margin-left: 200px;
+    margin-right: 255px;
+}
+
+.sub{
+    color: #cc0000;
+    font-size: 1.2em;
+    text-decoration-color: aqua;
+    text-decoration-line:overline;
+    text-align: center;
+    margin-right: 50px;
+}
