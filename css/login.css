@@ -128,3 +128,15 @@ div.login::after{
 input.checkbox{
     width: auto;
 }
+input.login{background-color:blue;
+border:none;
+color:white;
+padding:10px 25px;
+text-decoration:none;
+margin:4px 2px;
+cursor:pointer;
+font-family:arial;
+box-shadow:3px 3px 6px black;
+border-radius:4px;
+    width: 100px;
+    height: auto;}

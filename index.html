@@ -11,7 +11,7 @@
 				pwd=storage.getItem('pass');
 				if(uname){
                 if(form.uname.value == uname && form.password.value == pwd) { 
-				window.open('home page.html');/*opens the target page while Id & password matches*/
+				window.location.href='home page.html';/*opens the target page while Id & password matches*/
                 }
                 else {
                     alert("Error Password or Username");/*displays error message*/
@@ -33,7 +33,7 @@
 <label for="uname" class="uname">Username <input type="text" id="uname" placeholder="e.g. xyz@gmail.com" class="uname"> </label> <br>
 <label for="password" class="pswrd">Password <input type="password" id="password" class="pswrd"> </label> <br>
 <br>
-<input type="submit" value="Login" id="login" class="login" onclick="check(this.form)"/> &nbsp;&nbsp;&nbsp;
+<input type="button" value="Login" id="login" class="login" onclick="check(this.form)"/> &nbsp;&nbsp;&nbsp;
 <input type="reset" value="Clear" id="clear" class="clear" /><br><br>
 <br>
     <b style="color: maroon">New User?</b><a class="link" href="register_now.html">Register Now</a>

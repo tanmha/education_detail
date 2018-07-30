@@ -6,13 +6,18 @@
 <script>
 	function sign_up(form) { 
 				var storage = window.localStorage;
+				if(form.firstname.value !=''){
 				storage.setItem("fname", form.firstname.value);
 				storage.setItem("lname", form.lastname.value);
 				storage.setItem("uname", form.username.value);
 				storage.setItem("pass", form.password.value);
+				window.location.href='index.html';
 				alert("Registed Sucessfully");
-				window.open('index.html');
-            }
+				}
+				else{alert("Username is Empty");}
+				}
+			
+				
 </script>
     </head>
     <body>
@@ -29,7 +34,7 @@
                 <label for="username" class="username">Username&nbsp;<input type="text" id="username" class="username"></label><br>
                 <label for="password" class="pswrd">Password&nbsp;&nbsp;<input type="password" id="password" class="pswrd"></label><br>
                 <br>
-                <input type="submit" value="Sign Up" class="signup" onclick="sign_up(this.form);">
+                <input type="button" value="Sign Up" class="signup" onclick="sign_up(this.form);">
                 &nbsp;
                 &nbsp;
                 &nbsp;
